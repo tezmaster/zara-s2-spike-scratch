@@ -1,0 +1,7 @@
+{
+  "name": "zara-s2-spike-scratch",
+  "version": "0.0.0",
+  "private": true,
+  "description": "ZARA-039 S2 scratch fixture. Seeded bug + failing test. Disposable.",
+  "scripts": { "test": "node --test test/" }
+}
