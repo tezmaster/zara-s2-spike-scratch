@@ -5,5 +5,5 @@ export function proratedRefundCents(totalCents, unusedDays, totalDays) {
   if (!Number.isInteger(totalCents) || totalCents < 0) throw new Error("bad total");
   if (!Number.isInteger(unusedDays) || !Number.isInteger(totalDays) || totalDays <= 0) throw new Error("bad days");
   if (unusedDays < 0 || unusedDays > totalDays) throw new Error("unused out of range");
-  return Math.round((totalCents * unusedDays) / (totalDays + 1));
+  return Math.round((totalCents * unusedDays) / totalDays);
 }
